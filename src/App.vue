@@ -1,5 +1,5 @@
 <template>
-  <div id="sidebarapp">
+  <div id="app">
 <Sidebar></Sidebar>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-#sidebarapp {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
