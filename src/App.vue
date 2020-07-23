@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="sidebarapp">
     <Sidebar></Sidebar>
   </div>
 </template>
@@ -18,7 +18,7 @@
 </script>
 
 <style lang="scss">
-  #app {
+  #sidebarapp {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -31,7 +31,7 @@
 
   $breakpoint-tablet: 800px;
   @media (max-width: $breakpoint-tablet) {
-    #app {
+    #sidebarapp {
       display: none;
     }
   }
