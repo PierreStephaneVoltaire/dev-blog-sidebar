@@ -5,16 +5,16 @@
 </template>
 
 <script lang="ts">
-  import {Component, Vue} from 'vue-property-decorator'
-  import Sidebar from './components/Sidebar.vue'
+import { Component, Vue } from 'vue-property-decorator'
+import Sidebar from './components/Sidebar.vue'
 
   @Component({
     components: {
       Sidebar
     }
   })
-  export default class App extends Vue {
-  }
+export default class App extends Vue {
+}
 </script>
 
 <style lang="scss">
@@ -29,7 +29,7 @@
 
   }
 
-  $breakpoint-tablet: 800px;
+  $breakpoint-tablet: 1500px;
   @media (max-width: $breakpoint-tablet) {
     #sidebarapp {
       display: none;
