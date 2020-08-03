@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="sidebar">
     <component :is="dynamicComponent"></component>
 
     <router-view/>
@@ -22,7 +22,7 @@ export default class App extends Vue {
 </script>
 
 <style lang="scss">
-  #app {
+  #sidebar {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
