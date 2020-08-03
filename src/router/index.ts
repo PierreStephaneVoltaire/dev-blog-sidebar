@@ -1,11 +1,8 @@
 import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
 import Sidebar from '../components/Sidebar.vue'
 import Groupbar from '../components/groupbar.vue'
 
-Vue.use(VueRouter)
-
-const routes: Array<RouteConfig> = [
+const routes: Array<any> = [
   {
     path: '/',
     component: Sidebar
@@ -17,10 +14,4 @@ const routes: Array<RouteConfig> = [
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-
-  routes
-})
-
-export default router
+export default routes
