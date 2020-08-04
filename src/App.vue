@@ -10,12 +10,34 @@ import routes from '@/router'
 
   @Component
 export default class App extends Vue {
-  get dynamicComponent () {
-    const comp = routes.find((route) => {
-      return route.path.length !== 1 && window.location.pathname.substr(0, route.path.length) === route.path
-    })
-    return comp ? comp.component : routes[0].component
+  mounted () {
+    // window.addEventListener('hashchange', this.updatepath)
   }
+
+ updatepath=() => {
+   this.path = window.location.pathname
+   console.log('The hash has changed!', this.path)
+ }
+
+ destroyed () {
+   window.removeEventListener('hashchange', this.updatepath)
+ }
+
+ set path (val) {
+   this.path = val
+ }
+
+ get path (): string {
+   return window.location.pathname
+ }
+
+ get dynamicComponent () {
+   console.error(this.path)
+   const comp = routes.find((route) => {
+     return route.path.length !== 1 && this.path.substr(0, route.path.length) === route.path
+   })
+   return comp ? comp.component : routes[0].component
+ }
 }
 </script>
 

@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import Sidebar from '../components/Sidebar.vue'
 import Groupbar from '../components/groupbar.vue'
 
