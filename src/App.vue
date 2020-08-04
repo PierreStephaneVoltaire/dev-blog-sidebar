@@ -1,8 +1,6 @@
 <template>
   <div id="sidebar">
     <component :is="dynamicComponent"></component>
-
-    <router-view/>
   </div>
 </template>
 
